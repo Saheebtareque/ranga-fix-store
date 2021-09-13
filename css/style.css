@@ -63,7 +63,8 @@ body {
   box-shadow: 10px 10px 20px gray;
   border-radius: 5px;
   margin-right: 30px;
-  position: fixed;
+  /*  previously the position was fixed the cart section disabled once the details button was clicked  */
+  position: relative;
 }
 .cart-main {
   padding-right: 30px;
