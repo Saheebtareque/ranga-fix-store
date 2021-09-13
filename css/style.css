@@ -52,7 +52,9 @@ body {
 }
 /* styling over the paragraph tags of products */
 .customized {
-  color:rgb(200, 57, 85);
+  font-size: 18px;
+  color:rgb(173, 39, 66);
+  font-weight: 500;
 }
 .cart {
   width: 350px;
