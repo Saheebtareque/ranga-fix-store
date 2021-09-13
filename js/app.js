@@ -21,12 +21,15 @@ const showProducts = (products) => {
 
     const div = document.createElement("div");
     div.classList.add("product");
+    // styling is done to change the font color of paragraph tags located inside each boxes of differnt products 
     div.innerHTML = `<div class="single-product">
       <div>
     <img class="product-image" src=${image}></img>
       </div>
       <h3>${product.title}</h3>
-      <p>Category: ${product.category}</p>
+      <p> <span class="customized">Category: </span> ${product.category}</p>
+      <p> <span class="customized">Rating: </span> ${product.rating.rate}</p>
+      <p> <span class="customized">Number of people reviwed: </span>  ${product.rating.count}</p>
       <h2>Price: $ ${product.price}</h2>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
       <button id="details-btn" class="btn btn-danger">Details</button></div>
